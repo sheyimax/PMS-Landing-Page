@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: rgb(121, 179, 121);
+    --bg-color: rgb(12, 180, 82);
+    --text-color: #fff;
+    --text-color1: #1f1f1f;
+    --tertiary-color: rgb(201, 194, 194);
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+    --btn-color: rgb(13, 78, 13);
+}
+
+::selection{
+    background: var(--main-color);
+    color: #fff;
+}
+
+body{
+    color: var(--text-color);
+}
+
+#header{
+    background-image: url(images/background1.png.png);
+    margin-top: 80px;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    background: rgb(148, 143, 143);
+}
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.logo{
+    width: 100px;
+    left: 8%;
+    height: 50px;
+}
+
+#nav-bar ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px; 
+  }
+  
+#nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 10px;
+  }
+  
+#nav-bar ul li a:hover{
+    color: rgb(19, 71, 3);
+    transition: 0.4s;
+  }
+
+.btn{
+   background-color: var(--btn-color);
+   color: white;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: bold;
+   padding: 12px 28px;
+   border-radius: 8px;
+   transition: 0.4s;
+   margin-right: 20px;
+}
+
+.btn.btnl{
+    background-color: var(--text-color);
+    color: var(--text-color1);
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    color: var(--text-color1);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: poppin, sans-serif;
+    padding: 0 32px;
+}
+
+.sub-title{
+   font-size: 24px;
+   font-weight: bold;
+   color: var(--text-color1);
+   font-family: poppin, sans-serif; 
+   padding: 32px 32px;
+}
+
+
+/*---------------------------Footers start here-------------------*/
+
+
+
+/*------------media query--------------------------*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
