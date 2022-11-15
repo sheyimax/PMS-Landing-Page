@@ -90,10 +90,9 @@ body{
     transition: 0.4s;
   }
 
-#header-button{
-    width: 500px;
-
-}
+.cta{
+    margin-left: 250px;
+  }
 
 .btn{
    background-color: var(--btn-color);
